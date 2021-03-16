@@ -1,0 +1,71 @@
+/* #FFBA70 Amarelo
+#FF7D8A Vermelho
+#9D64FF Roxo
+#4ECEFC Azul
+#92FCAB Verde 
+rgba(255, 255, 255, 0.274) 
+ #00000073*/
+
+.back {
+    background-color: #07183b62  ;
+    text-align: center;
+    padding: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: auto;
+    width: 40%;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+
+.textos {
+    color: #FFBA70;
+    background-color: #00000033;
+    padding: 8px;     
+}
+
+.textos2 {
+    color:#FFBA70; 
+    margin: 2px;
+   
+}
+
+.demos {
+
+    text-align: center; 
+    border-radius: 5px;
+    /* padding: 5px;  */
+    color: #ffffffc2;
+    margin: auto;
+    width: auto; 
+    height: 60px; 
+    font-weight: 700;
+}
+
+.demo {
+    color: #FFBA70  ;
+}
+
+.combochecktudo {
+    
+    background-color: #0000003f;
+    padding: 8px;  
+      
+}
+
+.combocheck{
+    display: inline-flex;
+    background-color: #00000046;
+    padding: 8px;  
+    border-radius: 5px;
+      
+}
+
+.check {
+    margin: 10px;
+}
+
+.transp {
+    color: rgba(255, 255, 255, 0);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coversor</title>
+</head>
+
+<body>
+    <div class="back">
+        <h2 class="textos">COVERSOR DECIMAL</h2>
+        <div class="combochecktudo">
+        <input id="demo1" type="text" placeholder="Digite o valor em decimal:" style="height: 20px;">
+        <br>
+        <br>
+        <h3 class="textos2">C o n v e r t e r <b class="transp">__</b> p a r a :</h3>
+
+        <div class="combocheck">
+            <span class="check">
+                <input onclick="aparecer_octal()" type="checkbox"><span class="demos"><b>Octal</b></span>
+                <br>
+
+                <div class="demo" id="demo2">
+                </div>
+            </span>
+            <br>
+            <br>
+            <span   class="check">
+                <input onclick="aparecer_hexa()" type="checkbox"><span class="demos"><b>Hexadecimal</b></span>
+                <br>
+
+                <div class="demo" id="demo3">
+                </div>
+            </span>
+            <br>
+            <br>
+            <span  class="check">
+                <input onclick="aparecer_bin()" type="checkbox"><span class="demos"><b>Binário</b></span>
+                <br>
+
+                <div class="demo" id="demo4">
+                </div>
+            </span>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        </div>
+        <br>
+
+        <button onclick="converter()">Converter</button>
+
+    </div>
+
+
+    <script>
+        function converter() {
+            var decimal = Number(demo1.value);
+            let octal = decimal.toString(8);
+            let hexadecimal = decimal.toString(16);
+            let binaria = decimal.toString(2);
+
+            console.log(decimal);
+            console.log(octal);
+            console.log(hexadecimal);
+            console.log(binaria);
+
+            document.getElementById("demo1").innerHTML = ` <br> ${decimal}`;
+            document.getElementById("demo2").innerHTML = ` <br> ${octal}`;
+            document.getElementById("demo3").innerHTML = ` <br> ${hexadecimal}`;
+            document.getElementById("demo4").innerHTML = ` <br> ${binaria}`;
+
+        }
+        function aparecer_bin() {
+            demo4.style.display = 'block'
+        }
+        function aparecer_hexa() {
+            demo3.style.display = 'block'
+        }
+        function aparecer_octal() {
+            demo2.style.display = 'block'
+        }
+        // document.bg = "#00000052" troquei pelo codigo abaixo... achei na internet prof, só pra deixar animado o fundo;
+        document.body.style.backgroundImage = "url('https://cutewallpaper.org/21/space-wallpaper-gif/1920x1080-Wallpaper-Gifs-Keysinspectorinc.com.gif')";
+    </script>
+</body>
